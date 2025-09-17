@@ -40,14 +40,16 @@ h1 {
     gap: 20px;
 }
 
-.col {
+.col-card {
     width: calc((100% / 3) - (40px / 3));
+    
 }
 
 .card {
     background-color: white;
     padding: 15px;
     position: relative;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
 }
 
 .image {
@@ -63,6 +65,7 @@ h1 {
 .date {
     font-family: "Sometype Mono", monospace;
     display: block;
+    margin-bottom: 10px;
 }
 
 .pin {
@@ -71,8 +74,8 @@ h1 {
     left: 50%;
     height: 25px;
     transform: translate(-50%, -50%);
-
 }
+
 
 /*********************** HOVER **************************/
 .card:hover .pin {
@@ -97,7 +100,7 @@ h1 {
         background-size: 30%;
     }
 
-    .col {
+    .col-card {
         width: calc((100% / 2) - (20px / 2));
     }
 }
@@ -114,11 +117,7 @@ h1 {
         background-size: 20%;
     }
 
-    h1 {
-        font-size: 70px;
-    }
-
-    .col {
+    .col-card {
         width: 100%;
     }
 }
