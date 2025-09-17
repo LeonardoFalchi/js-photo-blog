@@ -1,3 +1,124 @@
+/* GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/cork.png);
+    background-size: 50%;
+    height: 100vh;
+}
+
+/* HEADER */
+header {
+    background-image: url(img/wall.png);
+    background-size: 50%;
+    height: 100px;
+    text-align: center;
+}
+
 h1 {
     font-family: "Edu Tas Beginner", sans-serif;
+    font-size: 60px;
+    line-height: 100px;
+}
+
+/* MAIN */
+#main-container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col {
+    width: calc((100% / 3) - (40px / 3));
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-family: "Edu Tas Beginner", sans-serif;
+    display: block;
+}
+
+.date {
+    font-family: "Sometype Mono", monospace;
+    display: block;
+}
+
+.pin {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    height: 25px;
+    transform: translate(-50%, -50%);
+
+}
+
+/*********************** HOVER **************************/
+.card:hover .pin {
+    display: none;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+
+/************************ RESPONSIVE+++++++++++++++++++++*/
+
+/* TABLET VERSION */
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size: 30%;
+    }
+
+    header {
+        background-size: 30%;
+    }
+
+    .col {
+        width: calc((100% / 2) - (20px / 2));
+    }
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background-size: 20%;
+    }
+
+    header {
+        background-size: 20%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .col {
+        width: 100%;
+    }
 }
