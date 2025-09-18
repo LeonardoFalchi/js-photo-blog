@@ -36,25 +36,34 @@ axios.get(endPointApi).then((response) => {
 
     //seleziono tutte le col-card
     const colsCards = document.querySelectorAll(".col-card");
-    
-    //selezione bottone
-    const button = document.getElementById("btn");
 
-    //selezione overlay
+    //seleziono overlay
     const overlay = document.getElementById("overlay");
 
-    //evento ad ogni col-card
+    //seleziono bottone
+    const button = document.getElementById("btn");
+
+    //seleziono immagine in overlay
+    const imageOver = document.querySelector(".image-overlay");
+
+
+
+    //ciclo su colsCards e ad ogni colCardItem aggiungo evento su di essa
     colsCards.forEach(colCardItem => {
         colCardItem.addEventListener("click", () => {
+            //mostro overlay
             overlay.style.display = "flex";
+            //seleziono immagine della card cliccata e la salvo in una variabile
+            const img = colCardItem.querySelector(".image");
+            //aggiorno overlay con l'immagine cliccata 
+            imageOver.src = img.src;
+            imageOver.alt = img.alt;
         });
     });
 
-    //evento su bottone
+    //evento su bottone per chiudere overlay
     button.addEventListener("click", () => {
+        //nascondo overlay
         overlay.style.display = "none";
     });
-
-
-    
 });
