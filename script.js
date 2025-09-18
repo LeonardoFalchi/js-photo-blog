@@ -33,4 +33,6 @@ axios.get(endPointApi).then((response) => {
 
     //Output in HTML
     cardOut.innerHTML = cardsString;
+
+    
 });
