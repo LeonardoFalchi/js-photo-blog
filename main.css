@@ -27,7 +27,7 @@ h1 {
 
 /* MAIN */
 #main-container {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -41,15 +41,15 @@ h1 {
 }
 
 .col-card {
-    width: calc((100% / 3) - (40px / 3));
-    
+    width: 250px;
 }
 
 .card {
     background-color: white;
     padding: 15px;
     position: relative;
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+
 }
 
 .image {
@@ -100,8 +100,8 @@ h1 {
         background-size: 30%;
     }
 
-    .col-card {
-        width: calc((100% / 2) - (20px / 2));
+    #main-container {
+        width: 90%;
     }
 }
 
@@ -117,7 +117,8 @@ h1 {
         background-size: 20%;
     }
 
-    .col-card {
-        width: 100%;
+    #main-container {
+        width: 90%;
     }
+
 }
