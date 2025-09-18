@@ -34,5 +34,27 @@ axios.get(endPointApi).then((response) => {
     //Output in HTML
     cardOut.innerHTML = cardsString;
 
+    //seleziono tutte le col-card
+    const colsCards = document.querySelectorAll(".col-card");
+    
+    //selezione bottone
+    const button = document.getElementById("btn");
+
+    //selezione overlay
+    const overlay = document.getElementById("overlay");
+
+    //evento ad ogni col-card
+    colsCards.forEach(colCardItem => {
+        colCardItem.addEventListener("click", () => {
+            overlay.style.display = "flex";
+        });
+    });
+
+    //evento su bottone
+    button.addEventListener("click", () => {
+        overlay.style.display = "none";
+    });
+
+
     
 });

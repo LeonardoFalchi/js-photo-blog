@@ -80,7 +80,7 @@ h1 {
 /*********** OVERLAY ********/
 #overlay {
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -91,8 +91,7 @@ h1 {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-
+    z-index: 100;
 }
 
 #btn {
@@ -113,6 +112,11 @@ h1 {
 
 .card:hover {
     cursor: pointer;
+}
+
+#btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 
