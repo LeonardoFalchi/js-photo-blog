@@ -29,7 +29,7 @@ h1 {
 #main-container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@ h1 {
     background-color: white;
     padding: 15px;
     position: relative;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 
 }
 
@@ -57,15 +57,19 @@ h1 {
     margin-bottom: 5px;
 }
 
-.title {
+.date {
     font-family: "Edu Tas Beginner", sans-serif;
     display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 
-.date {
+.title {
     font-family: "Sometype Mono", monospace;
     display: block;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .pin {
@@ -112,6 +116,9 @@ h1 {
 
 .card:hover {
     cursor: pointer;
+    transform: scale(1.1) rotate(10deg);
+    transition: transform 500ms, box-shadow 500ms;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 #btn:hover {

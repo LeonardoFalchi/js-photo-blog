@@ -22,8 +22,8 @@ axios.get(endPointApi).then((response) => {
                 <figure>
                     <img class="image" src="${cardItem.url}" alt="${cardItem.title}">
                     <figcaption>
-                        <span class="title">${cardItem.title}</span>
                         <span class="date">${cardItem.date}</span>
+                        <span class="title">${cardItem.title}</span>
                     </figcaption>
                 </figure>
             </div>
